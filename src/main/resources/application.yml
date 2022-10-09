@@ -1,0 +1,13 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/stu?setUnicode=true&characterEncoding=utf8&useSSL=false
+    username: root
+    password: 12345
+  servlet:
+    multipart:
+      max-file-size: 30Mb
+      max-request-size: 30Mb
+mybatis:
+  type-aliases-package: com.wdd.studentmanager.domain
+  mapper-locations: classpath:mapper/*.xml
